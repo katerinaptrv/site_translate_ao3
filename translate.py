@@ -2,9 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import openai
 import textwrap
+import os
 
 # Set up the OpenAI API key
-openai.api_key = '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'
+openai.api_key = os.environ['OPEN_API_KEY']
 
 # Define the maximum number of tokens per translation request
 MAX_TOKENS_PER_REQUEST = 1000
